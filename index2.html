@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<title>Enter Details</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+body {
+     margin:0;
+     padding:0;
+     height:100%;
+     }
+
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin:auto;
+    margin-top:20px;
+}
+
+
+     
+</style>
+</head>
+<body style="background-image:url(bg.jpg)">
+    <div class="w3-container">
+		<ul>
+		 		  <li style="margin-left:500px"><a href="#">Please fill in your details below</a></li>
+
+		  <!-- <li><a href="#home">HOME</a></li>
+		  <li><a href="#tips">TIPS</a></li>
+		  <li><a href="#contact">CONTACT</a></li>
+		  <li style="float:center"><a href="#cvmaker">CVMAKER</a></li>
+		  <li style="float:right"><a class="active" href="#about">ABOUT</a></li> -->
+		</ul>
+    </div>
+	
+	<div class="container">
+		<div class="row content text-center" style="padding-top: 25px;padding-bottom: 10px">
+			<div class="col-md-12">
+				<!-- <h3>Please fill in your details below.</h3> -->
+			</div>
+		</div>
+		
+		<div class="my-form">
+			<form role="form" method="post" action="generatepdf2.php">
+			
+				<div class="row content" style="padding-top: 25px">
+					<div class="col-md-2">
+					<h4>Full Name</h4><br>
+					<h4>Address</h4><br>
+					</div>
+					
+					<div class="col-md-1">
+					<h4>:</h4><br>
+					<h4>:</h4><br>
+					</div>
+					
+					<div class="col-md-3">
+					<label><input type="text" name="fname"></label><br><br><br>
+					<label><input type="text" name="add"></label><br><br><br>
+					
+					</div>
+					
+					<div class="col-md-2">
+					<h4>Email ID</h4><br>
+					<h4>Mobile No</h4><br>
+					</div>
+					
+					<div class="col-md-1">
+					<h4>:</h4><br>
+					<h4>:</h4><br>
+					</div>
+					
+					<div class="col-md-3">
+					<label><input type="text" name="email"></label><br><br><br>
+					<label><input type="text" name="mno"></label><br><br><br>
+					</div>
+					
+				</div>
+				
+				<div class="row content" >
+					<div class="col-md-2">
+					<h4>Objective</h4><br>
+					</div>
+					
+					<div class="col-md-1">
+					<h4>:</h4><br>
+					</div>
+					
+					<div class="col-md-9">
+					<label><input type="text" name="obj" style="width: 780px;"></label><br><br><br>
+					</div>
+				
+				</div>
+			
+				<div class="row content text-center" style="padding-bottom: 10px">
+					<div class="col-md-12">
+						<h3>Education Details:</h3>
+					</div>
+					
+				</div>
+				
+				<div class="row content" style="padding-top: 25px">
+					<div class="col-md-2">
+					<h4>School Name</h4><br>
+					<h4>Junior College Name</h4><br>
+					<h4>Current College Name</h4><br>
+					</div>
+					
+					<div class="col-md-1">
+					<h4>:</h4><br>
+					<h4>:</h4><br>
+					<h4>:</h4><br>
+					</div>
+					
+					<div class="col-md-3">
+					<label><input type="text" name="n1"></label><br><br><br>
+					<label><input type="text" name="n3"></label><br><br><br>
+					<label><input type="text" name="n5"></label><br><br><br>
+					</div>
+					
+					<div class="col-md-2">
+					<h4>10th Percentage</h4><br>
+					<h4>12th Percentage</h4><br>
+					<h4>Current CPI</h4><br>
+					</div>
+					
+					<div class="col-md-1">
+					<h4>:</h4><br>
+					<h4>:</h4><br>
+					<h4>:</h4><br>
+					</div>
+					
+					<div class="col-md-3">
+					<label><input type="text" name="n2"></label><br><br><br>
+					<label><input type="text" name="n4"></label><br><br><br>
+					<label><input type="text" name="n6"></label><br><br><br>
+					</div>
+					
+				</div>
+				
+				<div class="row content text-center" style="padding-bottom: 10px">
+					<div class="col-md-12">
+						<h3>Volunteer Work and Internships:</h3>
+						<p class="text-box1" style="padding-top: 25px">
+							<label for="box1">Line <span class="box-number1">1</span></label>
+							<input type="text" name="boxes1[]" value="" id="box1" />
+							<a class="add-box1" href="#">Add More</a>
+						</p>
+					</div>
+					
+				</div>
+				
+				<div class="row content text-center" style="padding-bottom: 10px">
+					<div class="col-md-12">
+						<h3>Academic Achievements and Accolades:</h3>
+						<p class="text-box2" style="padding-top: 25px">
+							<label for="box2">Line <span class="box-number2">1</span></label>
+							<input type="text" name="boxes2[]" value="" id="box2" />
+							<a class="add-box2" href="#">Add More</a>
+						</p>
+					</div>
+					
+				</div>
+				
+				<div class="row content text-center" style="padding-bottom: 10px">
+					<div class="col-md-12">
+						<h3>Activities and Interests:</h3>
+						<p class="text-box3" style="padding-top: 25px">
+							<label for="box3">Line <span class="box-number3">1</span></label>
+							<input type="text" name="boxes3[]" value="" id="box3" />
+							<a class="add-box3" href="#">Add More</a>
+						</p>
+					</div>
+					
+				</div>
+								
+				<div class="row content text-center" style="padding-bottom: 10px">
+					<div class="col-md-12">
+						<input type="submit" value="Submit" style="background-color: #4CAF50; /* Green */
+								border: none;
+								color: white;
+								padding: 15px 32px;
+								text-decoration: none;
+								display: block;
+								font-size: 16px;
+								margin:auto;
+								margin-top:20px;"/>
+					</div>
+					
+				</div>
+				
+			</form>
+		
+		</div>			
+	
+	</div>
+
+   
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+jQuery(document).ready(function($){
+    $('.my-form .add-box1').click(function(){
+        var n = $('.text-box1').length + 1;
+        if( 5 < n ) {
+            alert('Stop it!');
+            return false;
+        }
+        var box_html = $('<p class="text-box1"><label for="box1' + n + '"> Line <span class="box-number1">' + n + '</span></label> <input type="text" name="boxes1[]" value="" id="box1' + n + '" /> <a href="#" class="remove-box">Remove</a></p>');
+        box_html.hide();
+        $('.my-form p.text-box1:last').after(box_html);
+        box_html.fadeIn('slow');
+        return false;
+    });
+    $('.my-form').on('click', '.remove-box', function(){
+        $(this).parent().css( 'background-color', '#FF6C6C' );
+        $(this).parent().fadeOut("slow", function() {
+            $(this).remove();
+            $('.box-number').each(function(index){
+                $(this).text( index + 1 );
+            });
+        });
+        return false;
+    });
+});
+jQuery(document).ready(function($){
+    $('.my-form .add-box2').click(function(){
+        var n = $('.text-box2').length + 1;
+        if( 5 < n ) {
+            alert('Stop it!');
+            return false;
+        }
+        var box_html = $('<p class="text-box2"><label for="box2' + n + '"> Line <span class="box-number2">' + n + '</span></label> <input type="text" name="boxes2[]" value="" id="box2' + n + '" /> <a href="#" class="remove-box">Remove</a></p>');
+        box_html.hide();
+        $('.my-form p.text-box2:last').after(box_html);
+        box_html.fadeIn('slow');
+        return false;
+    });
+    $('.my-form').on('click', '.remove-box', function(){
+        $(this).parent().css( 'background-color', '#FF6C6C' );
+        $(this).parent().fadeOut("slow", function() {
+            $(this).remove();
+            $('.box-number').each(function(index){
+                $(this).text( index + 1 );
+            });
+        });
+        return false;
+    });
+});
+jQuery(document).ready(function($){
+    $('.my-form .add-box3').click(function(){
+        var n = $('.text-box3').length + 1;
+        if( 5 < n ) {
+            alert('Stop it!');
+            return false;
+        }
+        var box_html = $('<p class="text-box3"><label for="box3' + n + '">Line <span class="box-number3">' + n + '</span></label> <input type="text" name="boxes3[]" value="" id="box3' + n + '" /> <a href="#" class="remove-box">Remove</a></p>');
+        box_html.hide();
+        $('.my-form p.text-box3:last').after(box_html);
+        box_html.fadeIn('slow');
+        return false;
+    });
+    $('.my-form').on('click', '.remove-box', function(){
+        $(this).parent().css( 'background-color', '#FF6C6C' );
+        $(this).parent().fadeOut("slow", function() {
+            $(this).remove();
+            $('.box-number').each(function(index){
+                $(this).text( index + 1 );
+            });
+        });
+        return false;
+    });
+});
+
+jQuery(document).ready(function($){
+    $('.my-form .add-box4').click(function(){
+        var n = $('.text-box4').length + 1;
+        if( 5 < n ) {
+            alert('Stop it!');
+            return false;
+        }
+        var box_html = $('<p class="text-box4"><label for="box4' + n + '">Line <span class="box-number4">' + n + '</span></label> <input type="text" name="boxes4[]" value="" id="box4' + n + '" /> <a href="#" class="remove-box">Remove</a></p>');
+        box_html.hide();
+        $('.my-form p.text-box4:last').after(box_html);
+        box_html.fadeIn('slow');
+        return false;
+    });
+    $('.my-form').on('click', '.remove-box', function(){
+        $(this).parent().css( 'background-color', '#FF6C6C' );
+        $(this).parent().fadeOut("slow", function() {
+            $(this).remove();
+            $('.box-number').each(function(index){
+                $(this).text( index + 1 );
+            });
+        });
+        return false;
+    });
+});
+</script>
